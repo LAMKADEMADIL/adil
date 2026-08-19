@@ -1,5 +1,43 @@
+*{
+    background:#d6d9e3;
+    margin:0;
+    padding:0;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
 h1{
-    text-align: center;
-    color: red;
-    
+    color:blue;
+    padding:30px;
+    cursor:pointer;
+}
+h1:hover{
+    color:red;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:50%;
+}
+ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{
+    list-style:none;
+    padding:20px;
+    font-size:20px;
+    cursor:pointer;
+}
+ul li a{
+    text-decoration:none;
+    color:blue;
+}
+ul li a:hover{
+    color:red;
 }
