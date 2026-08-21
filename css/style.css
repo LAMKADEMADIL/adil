@@ -1,13 +1,18 @@
 *{
-    background:#d6d9e3;
     margin:0;
     padding:0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url("../image/1.jpg");
+    background-size: cover;
+    height: 100vh;
 }
 header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
+    width:100%; 
 }
 h1{
     color:blue;
@@ -30,7 +35,7 @@ ul{
 }
 ul li{
     list-style:none;
-    padding:20px;
+    padding:25px;
     font-size:20px;
     cursor:pointer;
 }
@@ -40,4 +45,8 @@ ul li a{
 }
 ul li a:hover{
     color:red;
+    background:yellow;
+    border-radius:10px;
+    padding:5px;
+    
 }
