@@ -14,13 +14,22 @@ header{
     align-items: center;
     width:100%; 
 }
+@media (max-width:480px) {
+    header{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%; 
+    }
+}
 h1{
-    color:blue;
+    color:white;
     padding:30px;
     cursor:pointer;
 }
 h1:hover{
-    color:red;
+    color:chocolate;
 }
 nav{
     display:flex;
@@ -41,12 +50,19 @@ ul li{
 }
 ul li a{
     text-decoration:none;
-    color:blue;
+    color:white;
+    font-weight:bold;
 }
 ul li a:hover{
-    color:red;
-    background:yellow;
+    color:chocolate;
     border-radius:10px;
-    padding:5px;
-    
+}
+#home{
+    background: chocolate;
+    padding:10px 20px;
+    border-radius:10px;
+    height:82vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
