@@ -9,7 +9,12 @@
   <body>
     <header>
       <h1>adil</h1>
-      <nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav id="nav-menu">
         <ul>
           <li><a href="#home"> Home </a></li>
           <li><a href="#about"> About </a></li>
@@ -45,5 +50,16 @@
         <img src="../image/lofy.png" alt="Image de profil" />
       </article>
     </section>
+
+    <!-- Script JavaScript للقائمة المنبثقة -->
+    <script>
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navMenu = document.getElementById('nav-menu');
+
+      mobileMenu.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        mobileMenu.classList.toggle('is-active');
+      });
+    </script>
   </body>
 </html>

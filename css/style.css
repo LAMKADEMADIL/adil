@@ -6,22 +6,13 @@ body{
     font-family: 'Poppins', sans-serif;
     background: url("../image/1.jpg");
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 header{
     display:flex;
     justify-content: space-between;
     align-items: center;
     width:100%; 
-}
-@media (max-width:480px) {
-    header{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width:100%; 
-    }
 }
 h1{
     color:white;
@@ -41,6 +32,7 @@ ul{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 ul li{
     list-style:none;
@@ -57,13 +49,31 @@ ul li a:hover{
     color:chocolate;
     border-radius:10px;
 }
+
+/* ===============================
+   Mobile Hamburger Menu (Toggle)
+   =============================== */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 30px;
+}
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
 #home{
     background: chocolate;
     padding:10px 20px;
     border-radius:10px;
     display:flex;
-    height:82vh;
-    margin:0 20px;
+    min-height:82vh;
+    margin:0 20px 20px 20px;
 }
 #home article{
     width:50%;
@@ -76,4 +86,76 @@ img{
     width:300px;
     height:300px;
     border-radius:50%;
+}
+
+/* ===============================
+   Responsive Design (Media Queries)
+   =============================== */
+
+/* Tablet & Smaller Screens */
+@media (max-width: 992px) {
+    nav {
+        width: 75%;
+    }
+    #home {
+        flex-direction: column;
+        min-height: auto;
+        padding: 40px 20px;
+    }
+    #home article {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+/* Tablets / Large Phones */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap; /* Allows nav to drop down */
+    }
+    .menu-toggle {
+        display: flex; /* Show hamburger icon */
+    }
+    nav {
+        display: none; /* Hide menu items by default */
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent background */
+        flex-direction: column;
+    }
+    nav.active {
+        display: flex; /* Show menu items when toggled */
+    }
+    ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    ul li {
+        padding: 15px;
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    /* Hamburger Icon Animation when active */
+    .menu-toggle.is-active .bar:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+    }
+    .menu-toggle.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.is-active .bar:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    #home {
+        margin: 0 10px 20px 10px;
+    }
 }
