@@ -18,10 +18,11 @@ h1{
     color:white;
     padding:30px;
     cursor:pointer;
+    position: relative;
+    top: -80px;
+    left:-70px;
 }
-h1:hover{
-    color:chocolate;
-}
+
 nav{
     display:flex;
     justify-content: space-between;
@@ -158,4 +159,8 @@ img{
     #home {
         margin: 0 10px 20px 10px;
     }
+}
+#lien{
+    color : black;
+    font-size: 200px;
 }
