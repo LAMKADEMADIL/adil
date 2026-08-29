@@ -9,24 +9,37 @@
   <body>
     <header>
       <h1 class="logo">Portfolio</h1>
-
-     <button id="menuBtn">☰</button>
-  <nav>
-    <ul id="menu" hidden>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">À propos</a></li>
-      <li><a href="#">Compétences</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+      <button id="menuBtn">☰</button>
+      <nav>
+        <ul id="menu" hidden>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Compétences</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <script>
-      const menuBtn = document.getElementById("menuBtn");
-      const menu = document.getElementById("menu");
-
-      menuBtn.onclick = function () {
-        menu.hidden = !menu.hidden;
-      };
-    </script>
+    <section>
+      <article>
+        <h1>
+          Bonjour, je suis Adil <br />developpement web full stack - mobile
+        </h1>
+        <p>
+          Je suis Adil Lamkadem, diplômé en Développement Digital – Option Web
+          Full Stack en 2026. Je possède des connaissances et des compétences
+          dans plusieurs technologies du développement web, notamment HTML, CSS,
+          JavaScript, React.js, PHP, Laravel, MySQL, Python, Bootstrap, Docker
+          et Cloud. Je suis actuellement à la recherche d’un stage afin de
+          mettre en pratique mes connaissances, acquérir une première expérience
+          professionnelle et développer de nouvelles compétences à travers des
+          projets concrets.
+        </p>
+        <a href="../cv/ADIL_CV.pdf" target="_blank"> cv adil lamkadem </a>
+      </article>
+      <article>
+        <img src="../image/photo.adil.jpeg" alt="Photo-adil"/>
+      </article>
+    </section>
+    <script src="../javascript/javascript.js"></script>
   </body>
 </html>

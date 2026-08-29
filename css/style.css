@@ -58,13 +58,11 @@ header nav ul li a {
   text-decoration: none;
 }
 
-
 /* ============================= */
 /* Responsive - écran max 360px */
 /* ============================= */
 
 @media (max-width: 360px) {
-
   header h1 {
     font-size: 22px;
   }
@@ -91,13 +89,11 @@ header nav ul li a {
   }
 }
 
-
 /* ============================= */
 /* Tablette 361px → 768px */
 /* ============================= */
 
 @media (min-width: 361px) and (max-width: 768px) {
-
   header {
     margin: 15px;
   }
@@ -121,14 +117,12 @@ header nav ul li a {
   }
 }
 
-
 /* ============================= */
 /* Ordinateur portable */
 /* 769px → 1200px */
 /* ============================= */
 
 @media (min-width: 769px) and (max-width: 1200px) {
-
   header {
     margin: 20px;
   }
@@ -142,13 +136,11 @@ header nav ul li a {
   }
 }
 
-
 /* ============================= */
 /* Grand écran */
 /* ============================= */
 
 @media (min-width: 1201px) {
-
   header {
     margin: 25px 40px;
   }
@@ -162,13 +154,11 @@ header nav ul li a {
   }
 }
 
-
 /* ============================= */
 /* Écran très petit */
 /* ============================= */
 
 @media (max-width: 300px) {
-
   header {
     margin: 10px;
   }
@@ -186,7 +176,6 @@ header nav ul li a {
   }
 }
 
-
 /* ============================= */
 /* Bouton Menu ☰ */
 /* ============================= */
@@ -201,13 +190,11 @@ header nav ul li a {
   cursor: pointer;
 }
 
-
 /* ============================= */
 /* Téléphone + Tablette */
 /* ============================= */
 
 @media (max-width: 768px) {
-
   /* Afficher le bouton */
   #menuBtn {
     display: block;
@@ -244,4 +231,44 @@ header nav ul li a {
   #menu[hidden] {
     display: none;
   }
+}
+/* css la parte section lein ou Photo */
+
+section{
+    display: flex;
+    margin: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+}
+section h1{
+    margin-top: 50px;
+    margin-bottom: 22px;
+}
+section p{
+    width: 600px;
+    text-align: justify;
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+section a{
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width: auto;
+    border-radius: 20px;
+    font-size: 22px;
+    text-decoration: none;
+}
+section a:hover{
+    background-color: blue;
+    transition: 2s;
+}
+article img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-right: 50px;
 }
