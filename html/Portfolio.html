@@ -9,18 +9,24 @@
   <body>
     <header>
       <h1 class="logo">Portfolio</h1>
-      
-      <nav>
-        <!-- <button onclick="menu.hidden^=1">&#9776</button> -->
-        <ul>
-          <li><a href="#home">Accueil</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#skills">Compétences</a></li>
-          <li><a href="#projects">Projets</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+
+     <button id="menuBtn">☰</button>
+  <nav>
+    <ul id="menu" hidden>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Compétences</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
     </header>
-    <script src="../javascript/javascript.js"></script>
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const menu = document.getElementById("menu");
+
+      menuBtn.onclick = function () {
+        menu.hidden = !menu.hidden;
+      };
+    </script>
   </body>
 </html>
