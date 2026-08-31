@@ -11,9 +11,8 @@
 body {
   background-image: linear-gradient(to top, #0f172a, #38bdf8);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 200vh;
 }
-
 header {
   display: flex;
   align-items: center;
@@ -333,4 +332,30 @@ article img {
         height: 300px;
         margin-left: 30px;
     }
+}
+/* css la page À propos */
+#propos{
+  height: 80vh;
+  width: 100%;
+  margin: 0;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.article1 h1{
+    text-align: center;
+    margin: 20px;
+}
+.article1 h2{
+    text-align: center;
+}
+.article1 p{
+    width: 80%;
+    margin:30px;
+}
+.article2 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }
