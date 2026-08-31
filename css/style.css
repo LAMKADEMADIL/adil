@@ -326,3 +326,11 @@ article img {
         width: 100%;
     }
 }
+/* css responsive l érco pc la page Acceuil */
+@media (min-width:1025px) and (max-width:1120px) {
+    article img {
+        width: 300px;
+        height: 300px;
+        margin-left: 30px;
+    }
+}
