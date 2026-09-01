@@ -340,7 +340,7 @@ article img {
   margin: 0;
   margin-top: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .article1 h1{
@@ -358,4 +358,50 @@ article img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+}
+/* css : responsive la page about */
+@media (max-width:500px){
+  #propos{
+   height: 160vh;
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}   
+.article2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+}
+@media (min-width:501px) and (max-width:736px){
+  #propos{
+   height: 130vh;
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}   
+.article2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+}
+@media (min-width:737px) and (max-width:1024px){
+  #propos{
+   height: 140vh;
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}   
+.article2 img{
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+}
 }
