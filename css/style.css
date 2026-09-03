@@ -413,4 +413,31 @@ article img {
     background-image: linear-gradient(to top, #0f172a, #38bdf8);
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+}
+.col{
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    padding: 20px;
+}
+.front-end{
+    border: 1px solid black ;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    gap: 25px;
+    padding: 10px;
+}
+.bcank-end{
+    border: 1px solid black ;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    gap: 25px;
+    padding: 10px;
 }
