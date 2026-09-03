@@ -6,6 +6,7 @@
   font-weight: bold;
   font-style: italic;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -404,4 +405,12 @@ article img {
     height: 300px;
     border-radius: 50%;
 }
+}
+/* la page Compétences*/
+#Compétences{
+    width: 100%;
+    margin: 0;
+    background-image: linear-gradient(to top, #0f172a, #38bdf8);
+    display: flex;
+    justify-content: space-between;
 }
